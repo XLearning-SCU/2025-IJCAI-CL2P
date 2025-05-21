@@ -1,0 +1,55 @@
+# general setting.
+seed: 3407
+wandb: False
+experiment_name: "${dataset.name}"
+verbose: false
+project_name: 'CL2P'
+runtimes: 10
+model_path: 'experiments/${dataset.name}/c${consistency.c_dim}-s${specificity.s_dim}-seed${seed}/final_model.pth'
+backbone:
+  type: 'cnn'
+
+dataset:
+  name: 'Edge-MNIST'
+  root: 'data/raw'
+  views: 2
+  class_num: 10
+  crop_size: 32
+
+train:
+  epochs: 200
+  devices: [0]
+  batch_size: 128  
+  optim: "adamw"
+  num_workers: 8
+  lr: 0.0001
+  gen_intervals: 20
+  valid_intervals: 20
+  use_ddp: False
+  samples_num: 8
+  resume: False
+  alpha: 2.0
+
+consistency:
+  c_dim: 20
+  in_channel: 1
+  ch_mult: [1, 2, 4]
+  block_size: 8
+  basic_hidden_dim: 16
+  latent_ch: 8
+  num_res_blocks: 3
+
+specificity:
+  s_dim: 20
+  ch_mult: [1, 2, 4]
+  block_size: 8
+  basic_hidden_dim: 16
+  latent_ch: 8
+  num_res_blocks: 3
+  
+pseudoinputs:
+  number: 250   
+  input_size: [1, 32, 32]
+  training_data_init: True
+  mean: 0.1
+  std: 0.02
