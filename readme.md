@@ -46,5 +46,5 @@ If you find CL2P useful in your research, please consider citing:
 ```
 
 
-## Acknowledgment
+## Acknowledgements
 The codes are based on [MRDD](https://github.com/Guanzhou-Ke/MRDD). Thanks to the authors for their codes!
