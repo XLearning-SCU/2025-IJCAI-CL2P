@@ -1,4 +1,4 @@
-PyTorch implementation for the paper "Disentangling Multi-view Representations via Curriculum Learning with Learnable Prior" (IJCAI 2025)
+PyTorch implementation for the paper "[Disentangling Multi-view Representations via Curriculum Learning with Learnable Prior](https://cshaowang.github.io/files/IJCAI2025_CL2P.pdf)" (IJCAI 2025)
 
 <!-- ![framework](figures/main-idea.png) -->
 ![framework](figures/framework.png)
