@@ -35,9 +35,9 @@ python test.py -f configs/Edge-MNIST.yaml
 This will load the trained model and test it using the configuration specified in `configs/Edge-MNIST.yaml`.
 
 ## Citation
-If you find CL2P useful in your research, please consider citing:
+If you find CL2P useful in your research, please consider giving it a ⭐️ and citing:
 ```latex
-@inproceedings{guo2025cl2p,
+@inproceedings{guo2025disentangling,
   title={Disentangling Multi-view Representations via Curriculum Learning with Learnable Prior},
   author={Guo, Kai and Wang, Jiedong and Peng, Xi and Hu, Peng and Wang, Hao},
   journal={Proceedings of the 34th International Joint Conference on Artificial Intelligence},
